@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Previsão do Tempo</title>
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="cep" placeholder="Busque por uma cidade...">
+        <div class="search">
+            <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+        </div>
+        <div class="error"></div>
+
+        <div class="container-results">
+            <h1>Tempo agora em</h1>
+            <h2 id="city">São Paulo, BR</h2>
+
+            <div class="container-degrees">
+                <div id="weather-icon">
+                    <img src="img/02d.png" alt="weather-icon">
+                </div>
+                <div id="degrees">25°</div>
+            </div>
+
+            <div id="weather-description">
+                <p>NUVENS DISPERSAS</p>
+            </div>
+
+            <div class="infos">
+                <div id="wind"><div class="bar"></div><p>Vento: 12km/h</p></div>
+                <div id="humidity"><div class="bar"></div><p>Umidade: 73%</p></div>
+            </div>
+        </div>
+
+        <div class="powered">By Rodrigo Souza</div>
+    </div>
+
+    <script type="text/javascript" src="config.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
